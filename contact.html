@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - TechVantage Solutions</title>
+  <link rel="stylesheet" href="/cleint/src/style.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f9f9f9;
+      color: #333;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: #fff;
+      text-align: center;
+      padding: 4rem 2rem;
+      margin-top: 60px;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: auto;
+      padding: 3rem 0;
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: 2rem;
+    }
+
+    /* Contact Form */
+    .contact-form {
+      background: #fff;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    .contact-form h2 {
+      margin-top: 0;
+      color: #007bff;
+    }
+    .contact-form input,
+    .contact-form textarea {
+      width: 100%;
+      padding: 12px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 15px;
+    }
+    .contact-form button {
+      padding: 12px 20px;
+      background: #007bff;
+      color: #fff;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 16px;
+      transition: 0.3s;
+    }
+    .contact-form button:hover {
+      background: #0056b3;
+    }
+
+    /* Info Section */
+    .contact-info {
+      background: #fff;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    .contact-info h3 {
+      margin-top: 0;
+      color: #007bff;
+    }
+    .contact-info p {
+      margin: 8px 0;
+    }
+
+    /* Map */
+    .map {
+      width: 100%;
+      height: 250px;
+      border-radius: 10px;
+      overflow: hidden;
+      margin-top: 1rem;
+    }
+
+    /* Active Nav */
+    .nav-links li a.active {
+      color: #007bff;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <header id="header">
+    <nav>
+      <a href="index.html" class="logo">Kushwansh</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="careers.html">Careers</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <h1>Contact Us</h1>
+    <p>We’d love to hear from you! Fill out the form or reach us directly.</p>
+  </section>
+
+  <!-- Contact Section -->
+  <div class="container">
+    <!-- Form -->
+    <div class="contact-form">
+      <h2>Send Us a Message</h2>
+      <form action="contact.php" method="POST" id="contactForm">
+        <input type="text" id="name" placeholder="Your Name" required name="name">
+        <input type="email" id="email" placeholder="Your Email" required name="email">
+        <input type="text" id="subject" placeholder="Subject" required name="subject">
+        <textarea id="message" rows="5" placeholder="Your Message" required name="message"></textarea>
+        <button type="submit">Send Message</button>
+      </form>
+    </div>
+
+    <!-- Info -->
+    <div class="contact-info">
+      <h3>Contact Information</h3>
+      <p>📧 tusharku509@gmail.com</p>
+      <p>📞 +91 9753188371</p>
+      <p>📍 0201, Chamati, Dist. Khandwa, MP</p>
+
+      <div class="map">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3681.4415827745!2d75.605!3d21.824!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjHCsDQ5JzI2LjQiTiA3NcKwMzYnMTguMCJF!5e0!3m2!1sen!2sin!4v1615972523456!5m2!1sen!2sin" 
+          width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>TechVantage Solutions</h4>
+        <p>Leading software development company delivering innovative solutions for businesses worldwide.</p>
+      </div>
+      <div class="footer-section">
+        <h4>Quick Links</h4>
+        <ul style="list-style: none; padding: 0;">
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="careers.html">Careers</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Services</h4>
+        <ul style="list-style: none; padding: 0;">
+          <li><a href="services.html">Web Development</a></li>
+          <li><a href="services.html">Mobile Apps</a></li>
+          <li><a href="services.html">Cloud Solutions</a></li>
+          <li><a href="services.html">AI Integration</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Contact Info</h4>
+        <p>📧 tusharku509@gmail.com</p>
+        <p>📞 +91 9753188371</p>
+        <p>📍 0201 dis.Khandwa, Chamati</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Kushwansh Solutions. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    document.getElementById("contactForm").addEventListener("submit", function(e){
+      e.preventDefault();
+
+      const name = document.getElementById("name").value.trim();
+      const email = document.getElementById("email").value.trim();
+      const subject = document.getElementById("subject").value.trim();
+      const message = document.getElementById("message").value.trim();
+
+      if(name === "" || email === "" || subject === "" || message === ""){
+        alert("Please fill all fields!");
+        return;
+      }
+
+      if(!/^[^@]+@[^@]+\.[^@]+$/.test(email)){
+        alert("Please enter a valid email!");
+        return;
+      }
+
+      alert("✅ Thank you, " + name + "! Your message has been sent.");
+      document.getElementById("contactForm").reset();
+    });
+  </script>
+
+  <script src="/cleint/src/script.js"></script>
+</body>
+</html>

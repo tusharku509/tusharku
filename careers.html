@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Careers - TechVantage Solutions</title>
+  <link rel="stylesheet" href="/cleint/src/style.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background: #f9f9f9;
+      color: #333;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: #fff;
+      text-align: center;
+      padding: 4rem 2rem;
+      margin-top: 60px;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: auto;
+      padding: 2rem 0;
+    }
+
+    h1, h2, h3 {
+      color: #222;
+    }
+
+    /* Job Card */
+    .job-listings {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.5rem;
+      margin-bottom: 3rem;
+    }
+    .job-card {
+      background: #fff;
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+      cursor: pointer;
+    }
+    .job-card:hover {
+      transform: translateY(-5px);
+    }
+    .job-card h3 {
+      margin: 0;
+      color: #007bff;
+    }
+    .job-card small {
+      display: block;
+      color: #777;
+      margin-bottom: 1rem;
+    }
+    .job-desc {
+      display: none;
+      margin-bottom: 1rem;
+    }
+    .apply-btn {
+      display: inline-block;
+      padding: 10px 18px;
+      background: #007bff;
+      color: #fff;
+      border-radius: 6px;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+    .apply-btn:hover {
+      background: #0056b3;
+    }
+
+    /* Benefits */
+    .benefits {
+      background: #fff;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      margin-bottom: 3rem;
+    }
+    .benefits ul {
+      list-style: none;
+      padding: 0;
+    }
+    .benefits li {
+      margin: 10px 0;
+      padding-left: 20px;
+      position: relative;
+    }
+    .benefits li::before {
+      content: "✔";
+      position: absolute;
+      left: 0;
+      color: #007bff;
+    }
+
+    /* CTA */
+    .cta {
+      text-align: center;
+      margin: 3rem 0;
+    }
+    .cta a {
+      background: #007bff;
+      color: #fff;
+      padding: 12px 24px;
+      text-decoration: none;
+      font-size: 18px;
+      border-radius: 6px;
+      transition: 0.3s;
+    }
+    .cta a:hover {
+      background: #0056b3;
+    }
+
+    /* Active Nav */
+    .nav-links li a.active {
+      color: #007bff;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <header id="header">
+    <nav>
+      <a href="index.html" class="logo">Kushwansh</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="careers.html" class="active">Careers</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <h1>Join Our Team</h1>
+    <p>हमारे साथ मिलकर भविष्य की Technology बनाइए 🚀</p>
+  </section>
+
+  <div class="container">
+    <!-- Job Openings -->
+    <h2>Open Positions</h2>
+    <div class="job-listings">
+      <div class="job-card">
+        <h3>Frontend Developer</h3>
+        <small>📍 Remote | Full-time</small>
+        <div class="job-desc">
+          <p>React.js, HTML, CSS, और JavaScript का उपयोग करके responsive UI development।</p>
+        </div>
+        <a href="contact.html" class="apply-btn">Apply Now</a>
+      </div>
+      <div class="job-card">
+        <h3>Backend Developer</h3>
+        <small>📍 Bangalore | Full-time</small>
+        <div class="job-desc">
+          <p>Node.js, Express और MongoDB आधारित APIs का development।</p>
+        </div>
+        <a href="contact.html" class="apply-btn">Apply Now</a>
+      </div>
+      <div class="job-card">
+        <h3>UI/UX Designer</h3>
+        <small>📍 Remote | Contract</small>
+        <div class="job-desc">
+          <p>Creative app और web design with Figma & Adobe XD.</p>
+        </div>
+        <a href="contact.html" class="apply-btn">Apply Now</a>
+      </div>
+      <div class="job-card">
+        <h3>AI/ML Engineer</h3>
+        <small>📍 Hyderabad | Full-time</small>
+        <div class="job-desc">
+          <p>AI models, Chatbots और Recommendation systems का development।</p>
+        </div>
+        <a href="contact.html" class="apply-btn">Apply Now</a>
+      </div>
+    </div>
+
+    <!-- Benefits -->
+    <div class="benefits">
+      <h2>Perks & Benefits</h2>
+      <ul>
+        <li>Flexible working hours</li>
+        <li>Work from home option</li>
+        <li>Learning & growth opportunities</li>
+        <li>Health insurance</li>
+        <li>Team building activities</li>
+      </ul>
+    </div>
+
+    <!-- CTA -->
+    <div class="cta">
+      <h2>Ready to Build the Future With Us?</h2><br>
+      <a href="contact.html">Apply Today</a>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>TechVantage Solutions</h4>
+        <p>Leading software development company delivering innovative solutions for businesses worldwide.</p>
+      </div>
+      <div class="footer-section">
+        <h4>Quick Links</h4>
+        <ul style="list-style: none; padding: 0;">
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="careers.html">Careers</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Services</h4>
+        <ul style="list-style: none; padding: 0;">
+          <li><a href="services.html">Web Development</a></li>
+          <li><a href="services.html">Mobile Apps</a></li>
+          <li><a href="services.html">Cloud Solutions</a></li>
+          <li><a href="services.html">AI Integration</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Contact Info</h4>
+        <p>📧 tusharku509@gmail.com</p>
+        <p>📞 +91 9753188371</p>
+        <p>📍 201 dist.Khandwa, Chamati</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Kushwansh Solutions. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    // Toggle Job Description
+    const jobCards = document.querySelectorAll('.job-card');
+    jobCards.forEach(card => {
+      card.addEventListener('click', () => {
+        const desc = card.querySelector('.job-desc');
+        desc.style.display = desc.style.display === 'block' ? 'none' : 'block';
+      });
+    });
+  </script>
+
+  <script src="/cleint/src/script.js"></script>
+</body>
+</html>

@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog - TechVantage Solutions</title>
+  <link rel="stylesheet" href="/cleint/src/style.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background: #f9f9f9;
+      color: #333;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: #fff;
+      text-align: center;
+      padding: 4rem 2rem;
+      margin-top: 60px;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: auto;
+      display: grid;
+      grid-template-columns: 3fr 1fr;
+      gap: 2rem;
+      padding: 2rem 0;
+    }
+
+    /* Blog Grid */
+    .blog-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+    .blog-card {
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      overflow: hidden;
+      transition: 0.3s;
+    }
+    .blog-card:hover {
+      transform: translateY(-5px);
+    }
+    .blog-card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+    }
+    .blog-card .content {
+      padding: 1rem;
+    }
+    .blog-card h3 {
+      margin: 0;
+      color: #007bff;
+    }
+    .blog-card p {
+      font-size: 14px;
+      color: #555;
+    }
+    .read-btn {
+      display: inline-block;
+      margin-top: 10px;
+      padding: 8px 14px;
+      background: #007bff;
+      color: #fff;
+      text-decoration: none;
+      border-radius: 6px;
+      font-size: 14px;
+      transition: 0.3s;
+    }
+    .read-btn:hover {
+      background: #0056b3;
+    }
+
+    /* Sidebar */
+    .sidebar {
+      background: #fff;
+      padding: 1.5rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      height: fit-content;
+    }
+    .sidebar h3 {
+      margin-top: 0;
+    }
+    .sidebar ul {
+      list-style: none;
+      padding: 0;
+    }
+    .sidebar li {
+      margin: 8px 0;
+    }
+    .sidebar a {
+      text-decoration: none;
+      color: #333;
+      transition: 0.3s;
+    }
+    .sidebar a:hover {
+      color: #007bff;
+    }
+
+    /* Search */
+    .search-box {
+      margin-bottom: 1.5rem;
+    }
+    .search-box input {
+      width: 100%;
+      padding: 10px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+    }
+
+    /* Active Nav */
+    .nav-links li a.active {
+      color: #007bff;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <header id="header">
+    <nav>
+      <a href="index.html" class="logo">Kushwansh</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="careers.html">Careers</a></li>
+        <li><a href="blog.html" class="active">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero -->
+  <section class="hero">
+    <h1>Our Blog</h1>
+    <p>Technology, Tips, and Insights from our Experts</p>
+  </section>
+
+  <div class="container">
+    <!-- Blog Grid -->
+    <div>
+      <div class="blog-grid" id="blogGrid">
+        <div class="blog-card" data-category="Web Development">
+          <img src="/cleint/src/images/blog1.jpeg" alt="Blog 1">
+          <div class="content">
+            <h3>Top 5 Web Development Trends 2025</h3>
+            <p>Discover the latest frameworks, AI integration, and futuristic web technologies...</p>
+            <a href="#" class="read-btn">Read More</a>
+          </div>
+        </div>
+        <div class="blog-card" data-category="AI">
+          <img src="/cleint/src/images/blog2.jpeg" alt="Blog 2">
+          <div class="content">
+            <h3>How AI is Changing Businesses</h3>
+            <p>Artificial Intelligence is revolutionizing industries, from healthcare to finance...</p>
+            <a href="#" class="read-btn">Read More</a>
+          </div>
+        </div>
+        <div class="blog-card" data-category="Mobile Apps">
+          <img src="/cleint/src/images/blog3.jpeg" alt="Blog 3">
+          <div class="content">
+            <h3>Why Every Business Needs a Mobile App</h3>
+            <p>In today’s fast-moving world, mobile apps are no longer a luxury—they’re a must...</p>
+            <a href="#" class="read-btn">Read More</a>
+          </div>
+        </div>
+        <div class="blog-card" data-category="Cloud">
+          <img src="/cleint/src/images/blog4.webp" alt="Blog 4">
+          <div class="content">
+            <h3>Future of Cloud Computing</h3>
+            <p>Scalable, secure, and efficient—cloud solutions are powering the digital era...</p>
+            <a href="#" class="read-btn">Read More</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sidebar -->
+    <aside class="sidebar">
+      <div class="search-box">
+        <input type="text" id="searchInput" placeholder="Search blog...">
+      </div>
+      <h3>Categories</h3>
+      <ul>
+        <li><a href="#" data-filter="all">All</a></li>
+        <li><a href="#" data-filter="Web Development">Web Development</a></li>
+        <li><a href="#" data-filter="AI">AI</a></li>
+        <li><a href="#" data-filter="Mobile Apps">Mobile Apps</a></li>
+        <li><a href="#" data-filter="Cloud">Cloud</a></li>
+      </ul>
+    </aside>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>TechVantage Solutions</h4>
+        <p>Leading software development company delivering innovative solutions for businesses worldwide.</p>
+      </div>
+      <div class="footer-section">
+        <h4>Quick Links</h4>
+        <ul style="list-style: none; padding: 0;">
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="careers.html">Careers</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Services</h4>
+        <ul style="list-style: none; padding: 0;">
+          <li><a href="services.html">Web Development</a></li>
+          <li><a href="services.html">Mobile Apps</a></li>
+          <li><a href="services.html">Cloud Solutions</a></li>
+          <li><a href="services.html">AI Integration</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Contact Info</h4>
+        <p>📧 tusharku509@gmail.com</p>
+        <p>📞 +91 9753188371</p>
+        <p>📍 201 dist.-Khandwa, Chamati</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Kushwansh Solutions. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    // Category Filter
+    const filterLinks = document.querySelectorAll('.sidebar a[data-filter]');
+    const blogCards = document.querySelectorAll('.blog-card');
+
+    filterLinks.forEach(link => {
+      link.addEventListener('click', (e) => {
+        e.preventDefault();
+        const filter = link.getAttribute('data-filter');
+
+        blogCards.forEach(card => {
+          if (filter === "all" || card.dataset.category === filter) {
+            card.style.display = "block";
+          } else {
+            card.style.display = "none";
+          }
+        });
+      });
+    });
+
+    // Search Function
+    document.getElementById('searchInput').addEventListener('input', function() {
+      const search = this.value.toLowerCase();
+      blogCards.forEach(card => {
+        const title = card.querySelector('h3').innerText.toLowerCase();
+        card.style.display = title.includes(search) ? "block" : "none";
+      });
+    });
+  </script>
+
+  <script src="/cleint/src/script.js"></script>
+</body>
+</html>
