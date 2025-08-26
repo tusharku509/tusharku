@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Us - TechVantage Solutions</title>
+  <link rel="stylesheet" href="/cleint/src/style.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background: #f9f9f9;
+      color: #333;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: auto;
+      padding: 2rem 0;
+    }
+
+    h1, h2, h3 {
+      color: #222;
+    }
+
+    .section {
+      background: #fff;
+      margin-bottom: 2rem;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      opacity: 0;               /* for animation */
+      transform: translateY(30px);
+      transition: all 0.8s ease;
+      margin-top: 60px;
+  
+    }
+
+    .section.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .values-list, .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+    }
+
+    .value-item, .stat-item {
+      background: #f1f1f1;
+      padding: 1rem;
+      border-radius: 8px;
+      text-align: center;
+    }
+
+    .stat-item h3 {
+      font-size: 2rem;
+      color: #007bff;
+    }
+
+    .team-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .team-member {
+      background: #f1f1f1;
+      padding: 1rem;
+      border-radius: 10px;
+      text-align: center;
+    }
+
+    .team-member img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 1rem;
+    }
+
+    .cta {
+      text-align: center;
+      margin: 2rem 0;
+      cursor: pointer;
+    }
+
+    .cta a {
+      background: #007bff;
+      color: #fff;
+      padding: 12px 24px;
+      text-decoration: none;
+      font-size: 18px;
+      border-radius: 6px;
+      transition: 0.3s;
+      cursor: pointer;
+    }
+
+    .cta a:hover {
+      background: #0056b3;
+    }
+
+    /* Navbar Active link */
+    .nav-links li a.active {
+      color: #007bff;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header / Navbar -->
+  <header id="header">
+    <nav>
+      <a href="index.html" class="logo">Kushwansh</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html" class="active">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="careers.html">Careers</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- About Page Content -->
+  <div class="container">
+
+    <!-- Company Intro -->
+    <section class="section">
+      <h1>About Us</h1>
+      <p>TechVantage Solutions एक leading software development company है, जो businesses को innovative digital solutions प्रदान करती है। हम web, mobile, cloud और AI integration में expert हैं।</p>
+    </section>
+
+    <!-- Mission & Vision -->
+    <section class="section">
+      <h2>Our Mission & Vision</h2>
+      <p><strong>Mission:</strong> Businesses को empower करना cutting-edge technology और reliable solutions के जरिए।</p>
+      <p><strong>Vision:</strong> 2030 तक global स्तर पर सबसे trusted software innovation company बनना।</p>
+    </section>
+
+    <!-- Values -->
+    <section class="section">
+      <h2>Our Core Values</h2>
+      <div class="values-list">
+        <div class="value-item">🚀 Innovation</div>
+        <div class="value-item">🤝 Customer First</div>
+        <div class="value-item">🔒 Security</div>
+        <div class="value-item">💡 Creativity</div>
+        <div class="value-item">⚡ Teamwork</div>
+      </div>
+    </section>
+
+    <!-- Our Story -->
+    <section class="section">
+      <h2>Our Story</h2>
+      <p>2020 में हमने एक छोटे startup के रूप में शुरुआत की थी। आज हम 150+ clients को globally service दे रहे हैं और 500+ projects successfully complete कर चुके हैं।</p>
+    </section>
+
+    <!-- Team -->
+    <section class="section">
+      <h2>Meet Our Team</h2>
+      <div class="team-grid">
+        <div class="team-member">
+          <img src="/cleint/src/images/tusha.jpg" alt="CEO">
+          <h3>Tushar Kushwah</h3>
+          <p>Founder & CEO</p>
+        </div>
+        <div class="team-member">
+          <img src="/cleint/src/images/tarun.jpg" alt="CTO">
+          <h3>Tarun Kushwah</h3>
+          <p>CTO</p>
+        </div>
+        <div class="team-member">
+          <img src="/cleint/src/images/jay.jpg" alt="Lead Developer">
+          <h3>Jay Kushwah</h3>
+          <p>Lead Developer</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Stats -->
+    <section class="section">
+      <h2>Our Achievements</h2>
+      <div class="stats-grid">
+        <div class="stat-item">
+          <h3 class="counter" data-target="500">0</h3>
+          <p>Projects Completed</p>
+        </div>
+        <div class="stat-item">
+          <h3 class="counter" data-target="150">0</h3>
+          <p>Happy Clients</p>
+        </div>
+        <div class="stat-item">
+          <h3 class="counter" data-target="5">0</h3>
+          <p>Years Experience</p>
+        </div>
+        <div class="stat-item">
+          <h3 class="counter" data-target="99">0</h3>
+          <p>Client Satisfaction %</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <div class="cta section">
+      <h2>Work With Us</h2>
+      <p>क्या आप अपना digital journey शुरू करना चाहते हैं? चलिए, साथ मिलकर आपके ideas को reality में बदलते हैं।</p><br>
+      <a href="contact.html">Start Your Project</a>
+    </div>
+
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>TechVantage Solutions</h4>
+        <p>Leading software development company delivering innovative solutions for businesses worldwide.</p>
+      </div>
+      <div class="footer-section">
+        <h4>Quick Links</h4>
+        <ul style="list-style: none; padding: 0;">
+          <li style="margin-bottom: 0.5rem;"><a href="about.html">About Us</a></li>
+          <li style="margin-bottom: 0.5rem;"><a href="services.html">Services</a></li>
+          <li style="margin-bottom: 0.5rem;"><a href="portfolio.html">Portfolio</a></li>
+          <li style="margin-bottom: 0.5rem;"><a href="careers.html">Careers</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Services</h4>
+        <ul style="list-style: none; padding: 0;">
+          <li style="margin-bottom: 0.5rem;"><a href="services.html">Web Development</a></li>
+          <li style="margin-bottom: 0.5rem;"><a href="services.html">Mobile Apps</a></li>
+          <li style="margin-bottom: 0.5rem;"><a href="services.html">Cloud Solutions</a></li>
+          <li style="margin-bottom: 0.5rem;"><a href="services.html">AI Integration</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Contact Info</h4>
+        <p>📧 tusharku509@gmail.com</p>
+        <p>📞 +91 9753188371</p>
+        <p>📍 0201 dis.Khandwa, Chamati</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Kushwansh Solutions. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    // Stats Counter Animation
+    const counters = document.querySelectorAll('.counter');
+    const speed = 100; // speed of count
+
+    counters.forEach(counter => {
+      const updateCount = () => {
+        const target = +counter.getAttribute('data-target');
+        const count = +counter.innerText;
+
+        const increment = Math.ceil(target / speed);
+
+        if(count < target) {
+          counter.innerText = count + increment;
+          setTimeout(updateCount, 50);
+        } else {
+          counter.innerText = target;
+        }
+      };
+
+      updateCount();
+    });
+
+    // Scroll Animation
+    const sections = document.querySelectorAll('.section');
+    const revealOnScroll = () => {
+      sections.forEach(sec => {
+        const secTop = sec.getBoundingClientRect().top;
+        if(secTop < window.innerHeight - 100) {
+          sec.classList.add('visible');
+        }
+      });
+    };
+    window.addEventListener('scroll', revealOnScroll);
+    revealOnScroll(); // initial load
+  </script>
+
+  <script src="/cleint/src/script.js"></script>
+</body>
+</html>
