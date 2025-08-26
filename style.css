@@ -59,7 +59,7 @@
 
         /* Hero Section */
         .hero {
-            background:linear-gradient(rgb(129, 217, 129),rgb(164, 164, 18),rgb(208, 81, 81)) ;
+           background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
            
             color: white;
             padding: 150px 0 100px;
@@ -344,4 +344,5 @@
 
         ::-webkit-scrollbar-thumb:hover {
             background: #555;
+
         }
