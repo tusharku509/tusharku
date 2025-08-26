@@ -23,7 +23,7 @@ body {
       padding: 2rem;
       border-radius: 10px;
       box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-      opacity: 0;               /* for animation */
+      opacity: 0; 
       transform: translateY(30px);
       transition: all 0.8s ease;
       margin-top: 60px;
@@ -99,4 +99,5 @@ body {
     .nav-links li a.active {
       color: #007bff;
       font-weight: bold;
+
     }
