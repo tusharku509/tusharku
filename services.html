@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Services - TechVantage Solutions</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background: #f9f9f9;
+      color: #333;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: auto;
+      padding: 2rem 0;
+    }
+
+    h1, h2, h3 {
+      color: #222;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: #fff;
+      text-align: center;
+      padding: 4rem 2rem;
+      margin-top: 40px;
+    }
+
+    .section {
+      background: #fff;
+      margin-bottom: 2rem;
+      padding: 2rem;
+      border-radius: 10px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+      opacity: 0;               
+      transform: translateY(30px);
+      transition: all 0.8s ease;
+    }
+    .section.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .service-card {
+      background: #f1f1f1;
+      padding: 1.5rem;
+      border-radius: 10px;
+      text-align: center;
+      transition: transform 0.3s;
+    }
+    .service-card:hover {
+      transform: translateY(-10px);
+      background: #e8f0ff;
+    }
+
+    .service-card h3 {
+      margin-bottom: 0.5rem;
+    }
+
+    .process-steps {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+    }
+    .step {
+      background: #f1f1f1;
+      padding: 1rem;
+      border-radius: 8px;
+      text-align: center;
+    }
+
+    .why-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+    }
+    .why-item {
+      background: #f1f1f1;
+      padding: 1rem;
+      border-radius: 8px;
+      text-align: center;
+    }
+
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 1rem;
+    }
+    .stat-item {
+      background: #f1f1f1;
+      padding: 1rem;
+      border-radius: 8px;
+      text-align: center;
+    }
+    .stat-item h3 {
+      font-size: 2rem;
+      color: #007bff;
+    }
+
+    .cta {
+      text-align: center;
+      margin: 2rem 0;
+      
+    }
+    .cta a {
+      background: #007bff;
+      color: #fff;
+      padding: 12px 24px;
+      text-decoration: none;
+      font-size: 18px;
+      border-radius: 6px;
+      transition: 0.3s;
+      
+    }
+    .cta a:hover {
+      background: #0056b3;
+    }
+
+    .nav-links li a.active {
+      color: #007bff;
+      font-weight: bold;
+    }
+    
+    
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <header id="header">
+    <nav>
+      <a href="index.html" class="logo">Kushwansh</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html" class="active">Services</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="careers.html">Careers</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Our Services</h1>
+    <p>हम आपके business के लिए cutting-edge technology solutions deliver करते हैं 🚀</p>
+  </section>
+
+  <div class="container">
+
+    <!-- Services -->
+    <section class="section">
+      <h2>What We Offer</h2>
+      <div class="services-grid">
+        <div class="service-card">
+          <h3>🌐 Web Development</h3>
+          <p>Modern, responsive और secure websites & web apps।</p>
+        </div>
+        <div class="service-card">
+          <h3>📱 Mobile Apps</h3>
+          <p>Native और cross-platform mobile applications।</p>
+        </div>
+        <div class="service-card">
+          <h3>☁️ Cloud Solutions</h3>
+          <p>Scalable cloud infrastructure और deployment।</p>
+        </div>
+        <div class="service-card">
+          <h3>🤖 AI Integration</h3>
+          <p>Machine learning और AI-powered smart features।</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Process -->
+    <section class="section">
+      <h2>Our Work Process</h2>
+      <div class="process-steps">
+        <div class="step">📌 Requirement Analysis</div>
+        <div class="step">📝 Planning & Design</div>
+        <div class="step">💻 Development</div>
+        <div class="step">⚙️ Testing & QA</div>
+        <div class="step">🚀 Deployment</div>
+        <div class="step">🔧 Support</div>
+      </div>
+    </section>
+
+    <!-- Why Choose Us -->
+    <section class="section">
+      <h2>Why Choose Us?</h2>
+      <div class="why-grid">
+        <div class="why-item">✅ Expert Developers</div>
+        <div class="why-item">✅ Affordable Pricing</div>
+        <div class="why-item">✅ 24/7 Support</div>
+        <div class="why-item">✅ 99% Client Satisfaction</div>
+      </div>
+    </section>
+
+    <!-- Stats -->
+    <section class="section">
+      <h2>Our Impact</h2>
+      <div class="stats-grid">
+        <div class="stat-item">
+          <h3 class="counter" data-target="500">0</h3>
+          <p>Projects Delivered</p>
+        </div>
+        <div class="stat-item">
+          <h3 class="counter" data-target="150">0</h3>
+          <p>Happy Clients</p>
+        </div>
+        <div class="stat-item">
+          <h3 class="counter" data-target="20">0</h3>
+          <p>Tech Experts</p>
+        </div>
+        <div class="stat-item">
+          <h3 class="counter" data-target="5">0</h3>
+          <p>Years of Experience</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <div class="cta section">
+      <h2>Let's Build Something Amazing</h2>
+      <p>आपके ideas को reality में बदलने के लिए हम ready हैं। 🚀</p><br>
+      <a href="contact.html">Start Your Project</a>
+    </div>
+
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>TechVantage Solutions</h4>
+        <p>Leading software development company delivering innovative solutions for businesses worldwide.</p>
+      </div>
+      <div class="footer-section">
+        <h4>Quick Links</h4>
+        <ul style="list-style: none; padding: 0;">
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="careers.html">Careers</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Services</h4>
+        <ul style="list-style: none; padding: 0;">
+          <li><a href="services.html">Web Development</a></li>
+          <li><a href="services.html">Mobile Apps</a></li>
+          <li><a href="services.html">Cloud Solutions</a></li>
+          <li><a href="services.html">AI Integration</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Contact Info</h4>
+        <p>📧 tusharku509@gmail.com</p>
+        <p>📞 +91 9753188371</p>
+        <p>📍 0201 dis.Khandwa, Chamati</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Kushwansh Solutions. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    // Counter Animation
+    const counters = document.querySelectorAll('.counter');
+    const speed = 100;
+
+    counters.forEach(counter => {
+      const updateCount = () => {
+        const target = +counter.getAttribute('data-target');
+        const count = +counter.innerText;
+        const increment = Math.ceil(target / speed);
+
+        if(count < target) {
+          counter.innerText = count + increment;
+          setTimeout(updateCount, 50);
+        } else {
+          counter.innerText = target;
+        }
+      };
+      updateCount();
+    });
+
+    // Scroll Animation
+    const sections = document.querySelectorAll('.section');
+    const revealOnScroll = () => {
+      sections.forEach(sec => {
+        const secTop = sec.getBoundingClientRect().top;
+        if(secTop < window.innerHeight - 100) {
+          sec.classList.add('visible');
+        }
+      });
+    };
+    window.addEventListener('scroll', revealOnScroll);
+    revealOnScroll();
+  </script>
+</body>
+</html>
