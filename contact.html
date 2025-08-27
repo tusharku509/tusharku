@@ -237,6 +237,96 @@
         ::-webkit-scrollbar-thumb:hover {
             background: #555;
         }
+
+    /* Responsive Layout */
+@media (max-width: 992px) {
+  .container {
+    grid-template-columns: 1fr; /* form ऊपर, info नीचे */
+  }
+  .contact-info {
+    margin-top: 1.5rem;
+  }
+}
+
+@media (max-width: 768px) {
+  /* Navbar Responsive */
+  nav {
+    position: relative;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px; /* header ke niche */
+    right: 0;
+    width: 100%;
+    background: #222;
+    padding: 1rem 0;
+    text-align: center;
+    gap: 1rem;
+  }
+
+  .nav-links li a {
+    color: #fff;
+    font-size: 1.1rem;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .menu-toggle {
+    display: block;
+    font-size: 1.8rem;
+    cursor: pointer;
+    color: #fff;
+  }
+
+  /* Hero Text Adjust */
+  .hero {
+    padding: 2.5rem 1rem;
+  }
+
+  .hero h1 {
+    font-size: 1.8rem;
+  }
+
+  .hero p {
+    font-size: 14px;
+  }
+
+  /* Contact Form Font Resize */
+  .contact-form input,
+  .contact-form textarea {
+    font-size: 14px;
+  }
+
+  .contact-form button {
+    width: 100%; /* Mobile पर full width button */
+  }
+
+  /* Map छोटा करें */
+  .map {
+    height: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  .contact-form h2 {
+    font-size: 1.4rem;
+  }
+
+  .contact-info h3 {
+    font-size: 1.2rem;
+  }
+
+  .hero h1 {
+    font-size: 1.6rem;
+  }
+}
+
+               
   </style>
 </head>
 <body>
@@ -360,11 +450,20 @@ menuToggle.addEventListener("click", () => {
   navLinks.classList.toggle("active");
 });
 
+    // Hamburger Menu
+const menuToggle = document.querySelector(".menu-toggle");
+const navLinks = document.querySelector(".nav-links");
+
+menuToggle.addEventListener("click", () => {
+  navLinks.classList.toggle("active");
+});
+
   </script>
 
  
 </body>
 </html>
+
 
 
 
