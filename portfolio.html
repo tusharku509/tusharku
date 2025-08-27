@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - TechVantage Solutions</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background: #f9f9f9;
+      color: #333;
+    }
+
+    h1, h2, h3 {
+      color: #222;
+    }
+
+    .hero {
+      background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+      color: #fff;
+      text-align: center;
+      padding: 4rem 2rem;
+      margin-top: 60px;
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: auto;
+      padding: 2rem 0;
+    }
+
+    /* Filter Buttons */
+    .filter-btns {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    .filter-btns button {
+      margin: 5px;
+      padding: 10px 20px;
+      border: none;
+      background: #007bff;
+      color: #fff;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+    .filter-btns button:hover, .filter-btns button.active {
+      background: #0056b3;
+    }
+
+    /* Portfolio Grid */
+    .portfolio-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .project {
+      background: #fff;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      opacity: 0;
+      transform: translateY(30px);
+      transition: all 0.8s ease;
+    }
+    .project.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    .project img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      display: block;
+      transition: 0.3s;
+    }
+    .project:hover img {
+      transform: scale(1.05);
+    }
+
+    .project-info {
+      padding: 1rem;
+    }
+    .project-info h3 {
+      margin-bottom: 0.5rem;
+    }
+
+    /* CTA */
+    .cta {
+      text-align: center;
+      margin: 3rem 0;
+    }
+    .cta a {
+      background: #007bff;
+      color: #fff;
+      padding: 12px 24px;
+      text-decoration: none;
+      font-size: 18px;
+      border-radius: 6px;
+      transition: 0.3s;
+    }
+    .cta a:hover {
+      background: #0056b3;
+    }
+
+    /* Active nav */
+    .nav-links li a.active {
+      color: #007bff;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <header id="header">
+    <nav>
+      <a href="index.html" class="logo">Kushwansh</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="portfolio.html" class="active">Portfolio</a></li>
+        <li><a href="careers.html">Careers</a></li>
+        <li><a href="blog.html">Blog</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Our Portfolio</h1>
+    <p>हमारे कुछ बेहतरीन projects पर एक नज़र डालें 🚀</p>
+  </section>
+
+  <div class="container">
+    <!-- Filter Buttons -->
+    <div class="filter-btns">
+      <button class="active" data-filter="all">All</button>
+      <button data-filter="web">Web</button>
+      <button data-filter="mobile">Mobile</button>
+      <button data-filter="cloud">Cloud</button>
+      <button data-filter="ai">AI</button>
+    </div>
+
+    <!-- Portfolio Grid -->
+    <div class="portfolio-grid">
+      <div class="project web">
+        <img src="flipkart.webp" alt="Web Project">
+        <div class="project-info">
+          <h3>E-Commerce Website</h3>
+          <p>Modern responsive online store.</p>
+        </div>
+      </div>
+      <div class="project mobile">
+        <img src="food.webp" alt="Mobile Project">
+        <div class="project-info">
+          <h3>Food Delivery App</h3>
+          <p>Cross-platform mobile application.</p>
+        </div>
+      </div>
+      <div class="project cloud">
+        <img src="claud.jpeg" alt="Cloud Project">
+        <div class="project-info">
+          <h3>Cloud Management System</h3>
+          <p>Secure scalable cloud deployment.</p>
+        </div>
+      </div>
+      <div class="project ai">
+        <img src="ai.webp" alt="AI Project">
+        <div class="project-info">
+          <h3>AI Chatbot</h3>
+          <p>Smart conversational AI solution.</p>
+        </div>
+      </div>
+      <div class="project web">
+        <img src="web das.png" alt="Web Dashboard">
+        <div class="project-info">
+          <h3>Analytics Dashboard</h3>
+          <p>Interactive web dashboard with charts.</p>
+        </div>
+      </div>
+      <div class="project mobile">
+        <img src="fitnas.avif" alt="Mobile Design">
+        <div class="project-info">
+          <h3>Fitness Tracker App</h3>
+          <p>Health & activity tracking mobile app.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- CTA -->
+    <div class="cta">
+      <h2>Want to See Your Project Here?</h2>
+      <p>आइए मिलकर आपका idea reality बनाते हैं 🚀</p><br>
+      <a href="contact.html">Start Your Project</a>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-content">
+      <div class="footer-section">
+        <h4>TechVantage Solutions</h4>
+        <p>Leading software development company delivering innovative solutions for businesses worldwide.</p>
+      </div>
+      <div class="footer-section">
+        <h4>Quick Links</h4>
+        <ul style="list-style: none; padding: 0;">
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="services.html">Services</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+          <li><a href="careers.html">Careers</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Services</h4>
+        <ul style="list-style: none; padding: 0;">
+          <li><a href="services.html">Web Development</a></li>
+          <li><a href="services.html">Mobile Apps</a></li>
+          <li><a href="services.html">Cloud Solutions</a></li>
+          <li><a href="services.html">AI Integration</a></li>
+        </ul>
+      </div>
+      <div class="footer-section">
+        <h4>Contact Info</h4>
+        <p>📧 tusharku509@gmail.com</p>
+        <p>📞 +91 9753188371</p>
+        <p>📍 201 dis.Khandwa, Chamati</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Kushwansh Solutions. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- JavaScript -->
+  <script>
+    // Portfolio Filter
+    const filterBtns = document.querySelectorAll('.filter-btns button');
+    const projects = document.querySelectorAll('.project');
+
+    filterBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        filterBtns.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+        const filter = btn.getAttribute('data-filter');
+
+        projects.forEach(proj => {
+          if(filter === 'all' || proj.classList.contains(filter)) {
+            proj.style.display = 'block';
+          } else {
+            proj.style.display = 'none';
+          }
+        });
+      });
+    });
+
+    // Scroll Animation
+    const revealProjects = () => {
+      projects.forEach(proj => {
+        const projTop = proj.getBoundingClientRect().top;
+        if(projTop < window.innerHeight - 100) {
+          proj.classList.add('visible');
+        }
+      });
+    };
+    window.addEventListener('scroll', revealProjects);
+    revealProjects();
+  </script>
+
+  <script src="script.js"></script>
+</body>
+</html>
