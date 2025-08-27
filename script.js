@@ -72,4 +72,12 @@
             });
         });
 
+
         document.querySelector('.stats') && statsObserver.observe(document.querySelector('.stats'));
+const menuToggle = document.querySelector(".menu-toggle");
+const navLinks = document.querySelector(".nav-links");
+
+menuToggle.addEventListener("click", () => {
+  navLinks.classList.toggle("active");
+});
+
