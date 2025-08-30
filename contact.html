@@ -488,71 +488,16 @@
         <h4>Contact Info</h4>
         <p>📧 tusharku509@gmail.com</p>
         <p>📞 +91 9753188371</p>
-        <p>📍 0201 dis.Khandwa, Chamati</p>
+        <p>📍 201 dist.Khandwa, Chamati</p>
       </div>
     </div>
     <div class="footer-bottom">
       <p>&copy; 2025 Kushwansh Solutions. All rights reserved.</p>
     </div>
   </footer>
-
-  <!-- JavaScript -->
-  <script>
-    document.getElementById("contactForm").addEventListener("submit", function(e){
-      e.preventDefault();
-
-      const name = document.getElementById("name").value.trim();
-      const email = document.getElementById("email").value.trim();
-      const subject = document.getElementById("subject").value.trim();
-      const message = document.getElementById("message").value.trim();
-
-      if(name === "" || email === "" || subject === "" || message === ""){
-        alert("Please fill all fields!");
-        return;
-      }
-
-      if(!/^[^@]+@[^@]+\.[^@]+$/.test(email)){
-        alert("Please enter a valid email!");
-        return;
-      }
-
-      alert("✅ Thank you, " + name + "! Your message has been sent.");
-      document.getElementById("contactForm").reset();
-    });
-    const menuToggle = document.querySelector(".menu-toggle");
-const navLinks = document.querySelector(".nav-links");
-
-menuToggle.addEventListener("click", () => {
-  navLinks.classList.toggle("active");
-});
-
-    // Hamburger Menu
-const menuToggle = document.querySelector(".menu-toggle");
-const navLinks = document.querySelector(".nav-links");
-
-menuToggle.addEventListener("click", () => {
-  navLinks.classList.toggle("active");
-});
-    const menuToggle = document.querySelector(".menu-toggle");
-const navLinks = document.querySelector(".nav-links");
-
-menuToggle.addEventListener("click", () => {
-  navLinks.classList.toggle("active");
-});
-
-// Hamburger Menu Toggle
-const menuToggle = document.querySelector(".menu-toggle");
-const navLinks = document.querySelector(".nav-links");
-
-menuToggle.addEventListener("click", () => {
-  navLinks.classList.toggle("active");
-});
-
-  </script>
-
- 
 </body>
 </html>
+
 
 
 
